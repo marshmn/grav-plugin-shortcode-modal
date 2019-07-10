@@ -25,7 +25,3 @@ form:
         0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
-    text_var:
-      type: text
-      label: PLUGIN_SHORTCODE_MODAL.TEXT_VARIABLE
-      help: PLUGIN_SHORTCODE_MODAL.TEXT_VARIABLE_HELP
