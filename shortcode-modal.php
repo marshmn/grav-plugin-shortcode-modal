@@ -12,18 +12,18 @@ class ShortcodeModalPlugin extends Plugin
     public static function getSubscribedEvents()
     {
         return [
-            'onPluginsInitialized' => ['onPluginsInitialized', 0]
+            'onShortcodeHandlers' => ['onShortcodeHandlers', 0],
+            'onTwigTemplatePaths' => ['onTwigTemplatePaths', 0]
         ];
     }
 
-    /**
-     * Initialize the plugin
-     */
-    public function onPluginsInitialized()
+    public function onShortcodeHandlers()
     {
-        if ($this->isAdmin()) {
-            return;
-        }
+        $this->grav['shortcode']->registerAllShortcodes(__DIR__.'/shortcodes');
     }
 
+    public function onTwigTemplatePaths()
+    {
+        $this->grav['twig']->twig_paths[] = __DIR__ . '/templates';
+    }
 }
