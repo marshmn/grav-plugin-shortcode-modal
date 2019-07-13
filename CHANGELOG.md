@@ -1,5 +1,5 @@
-# v0.1.0
-##  07/09/2019
+# v1.0.0
+##  07/13/2019
 
 1. [](#new)
-    * ChangeLog started...
+    * Initial `modal` and `modal-launch` shortcodes added

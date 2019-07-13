@@ -1,16 +1,19 @@
 name: Shortcode Modal
-version: 0.1.0
+version: 1.0.0
 description: Provides shortcodes for displaying content in a modal popup
-icon: plug
+icon: code
 author:
   name: Matt Marsh
   email: matt@crazedbytes.net
 homepage: https://github.com/marshmn/grav-plugin-shortcode-modal
-demo:
+demo: https://demos.crazedbytes.net/shortcode-modal
 keywords: grav, plugin, shortcode, ui
 bugs: https://github.com/marshmn/grav-plugin-shortcode-modal/issues
-docs: https://github.com/marshmn/grav-plugin-shortcode-modal/blob/develop/README.md
+docs: https://github.com/marshmn/grav-plugin-shortcode-modal/blob/master/README.md
 license: MIT
+
+dependencies:
+  - shortcode-core
 
 form:
   validation: strict
